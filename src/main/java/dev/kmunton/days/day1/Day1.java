@@ -19,7 +19,6 @@ public class Day1 implements Day {
     public void processData(String resource) {
         try {
             File file = new File(getClass().getClassLoader().getResource(resource).getFile());
-            System.out.println(file.getAbsolutePath());
             Scanner myReader = new Scanner(file);
             while (myReader.hasNextLine()) {
                 String s = myReader.nextLine();

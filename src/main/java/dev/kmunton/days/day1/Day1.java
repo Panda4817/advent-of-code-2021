@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Day1 implements Day {
@@ -18,7 +19,7 @@ public class Day1 implements Day {
 
     public void processData(String resource) {
         try {
-            File file = new File(getClass().getClassLoader().getResource(resource).getFile());
+            File file = new File(Objects.requireNonNull(getClass().getClassLoader().getResource(resource)).getFile());
             Scanner myReader = new Scanner(file);
             while (myReader.hasNextLine()) {
                 String s = myReader.nextLine();

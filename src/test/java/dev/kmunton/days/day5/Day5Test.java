@@ -16,11 +16,11 @@ class Day5Test {
 
     @Test
     void part1() {
-        assertEquals(day.part1(), 5);
+        assertEquals( 5, day.part1());
     }
 
     @Test
     void part2() {
-        assertEquals(day.part2(), 12);
+        assertEquals( 12, day.part2());
     }
 }

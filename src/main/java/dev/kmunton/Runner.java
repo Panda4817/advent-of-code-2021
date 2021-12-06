@@ -33,8 +33,11 @@ public class Runner {
         int part1 = ans.part1();
         final long endTimePart1 = System.currentTimeMillis();
 
-        if (part1 != -1) {
+        if (part1 > 0) {
             System.out.println(part1);
+        }
+
+        if (part1 != -1) {
             System.out.println("Total execution time: " + (endTimePart1 - startTimePart1) + " ms");
         }
 
@@ -44,8 +47,10 @@ public class Runner {
         int part2 = ans.part2();
         final long endTimePart2 = System.currentTimeMillis();
 
-        if (part2 != -1) {
+        if (part2 > 0) {
             System.out.println(part2);
+        }
+        if (part2 != -1) {
             System.out.println("Total execution time: " + (endTimePart2 - startTimePart2) + " ms");
         }
 

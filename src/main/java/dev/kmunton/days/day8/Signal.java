@@ -29,20 +29,13 @@ public class Signal {
             Integer i = s.length();
             if (i == 2 || i == 3 || i == 4 || i == 7) {
                 switch (i) {
-                    case 2:
-                        mappings.put(1, s);
+                    case 2 -> mappings.put(1, s);
+                    case 3 -> mappings.put(7, s);
+                    case 4 -> mappings.put(4, s);
+                    case 7 -> mappings.put(8, s);
+                    default -> {
                         break;
-                    case 3:
-                        mappings.put(7, s);
-                        break;
-                    case 4:
-                        mappings.put(4, s);
-                        break;
-                    case 7:
-                        mappings.put(8, s);
-                        break;
-                    default:
-                        break;
+                    }
                 }
             }
         }
